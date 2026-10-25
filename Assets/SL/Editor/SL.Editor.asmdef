@@ -1,0 +1,14 @@
+{
+  "name": "SL.Editor",
+  "rootNamespace": "",
+  "references": ["SL.Core","SL.World","SL.Actors","SL.Gameplay","SL.Net","SL.UI","SL.Game","Unity.Netcode.Runtime"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
