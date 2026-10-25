@@ -1,0 +1,1920 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soulbound Legends - Admin Compendium</title>
+<style>body{font-family:system-ui,sans-serif;background:#0b1530;color:#e8eefc;margin:0;padding:14px;line-height:1.45}
+h1{color:#f6c445}h2{color:#f6c445;border-bottom:1px solid #2a3a6a;padding-bottom:4px;margin-top:28px}h3{color:#7fc4ff}
+.wrap{overflow-x:auto}table{border-collapse:collapse;margin:10px 0;font-size:13px;min-width:600px}
+th,td{border:1px solid #2a3a6a;padding:5px 7px;text-align:left;vertical-align:top}th{background:#16254d;color:#f6c445}tr:nth-child(even){background:#101c3d}
+code{background:#16254d;padding:1px 4px;border-radius:3px}</style></head><body><h1>SOULBOUND LEGENDS - ADMIN COMPENDIUM</h1>
+<p>Generated from the game's data tables. Coordinates are world metres (x = east, z = north) inside each zone; (0,0) is the plaza centre.</p>
+<h2>1. Progression overview</h2>
+<ul>
+<li>Players start at Level 0 in Dawnrest Village (instanced; 12 players per instance).</li>
+<li>XP needed to go from Lv0 to Lv10: 1575. Max level: 100.</li>
+<li>Level 3: awaken the elemental inheritance (Elder Maren). Level 10 + promotion quest 'Trial of Ascension' unlocks the Kingdom Token, the village portal to Aurelion Kingdom (24 players per instance, extra kingdoms open when full), top-up and modes.</li>
+<li>LV Up Pill: levels 1-9 only; becomes claimable once 5 players have completed the promotion.</li>
+<li>Skills: max 10 equipped at once; the HUD shows 8 per page.</li>
+</ul>
+<h2>2. NPCs and what they give</h2>
+<h3>Dawnrest Village</h3>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>NPC</th>
+<th>Id</th>
+<th>Role</th>
+<th>Location</th>
+<th>Quests given</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Elder Maren</td>
+<td>elder</td>
+<td>quest</td>
+<td>(-9, 4) town centre, north-west</td>
+<td>Welcome to Dawnrest; Gloop Trouble; Awaken the Inheritance; The Wolf Pack; Stone Guardians; Trial of Ascension</td>
+</tr>
+<tr>
+<td>Borin the Smith</td>
+<td>smith</td>
+<td>smith</td>
+<td>(11, 8) town centre, north-east</td>
+<td>Metal for Borin; A Proper Blade</td>
+</tr>
+<tr>
+<td>Sylva the Alchemist</td>
+<td>alchemist</td>
+<td>alchemist</td>
+<td>(13, -6) town centre, south-east</td>
+<td>Herbs for Sylva; First Brew</td>
+</tr>
+<tr>
+<td>Tamsin</td>
+<td>innkeeper</td>
+<td>lore</td>
+<td>(-12, -6) town centre, south-west</td>
+<td>Tavern Gossip; Hidden Caches</td>
+</tr>
+<tr>
+<td>Guard Roan</td>
+<td>guard</td>
+<td>guard</td>
+<td>(26, 43) inner fields, north-east</td>
+<td>Across the Bridge; Venom in the Air</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Aurelion Kingdom</h3>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>NPC</th>
+<th>Id</th>
+<th>Role</th>
+<th>Location</th>
+<th>Quests given</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seneschal Valen</td>
+<td>kguide</td>
+<td>quest</td>
+<td>(6, -14) town centre, south-east</td>
+<td>Welcome to Aurelion</td>
+</tr>
+<tr>
+<td>Hale the Armorer</td>
+<td>ksmith</td>
+<td>smith</td>
+<td>(-17, 2) town centre, west</td>
+<td>Armor for the Guard</td>
+</tr>
+<tr>
+<td>Orla the Brewer</td>
+<td>kalch</td>
+<td>alchemist</td>
+<td>(17, 2) town centre, east</td>
+<td>Brewer's Order</td>
+</tr>
+<tr>
+<td>Mabel the Cook</td>
+<td>kcook</td>
+<td>quest</td>
+<td>(-12, -14) town centre, south-west</td>
+<td>Hearty Stew</td>
+</tr>
+<tr>
+<td>Pike the Fisher</td>
+<td>kfisher</td>
+<td>quest</td>
+<td>(12, -14) town centre, south-east</td>
+<td>River Lore</td>
+</tr>
+<tr>
+<td>Dorn the Farmer</td>
+<td>kfarmer</td>
+<td>quest</td>
+<td>(-24, -8) town centre, west</td>
+<td>The Herb Harvest</td>
+</tr>
+<tr>
+<td>Kessa the Hunter</td>
+<td>khunter</td>
+<td>quest</td>
+<td>(24, -8) town centre, east</td>
+<td>Beast Season; Drake Hunt</td>
+</tr>
+<tr>
+<td>Gruff the Miner</td>
+<td>kminer</td>
+<td>quest</td>
+<td>(-27, -20) town centre, south-west</td>
+<td>Ore for the Crown</td>
+</tr>
+<tr>
+<td>Zara the Merchant</td>
+<td>kmerchant</td>
+<td>quest</td>
+<td>(27, -20) town centre, south-east</td>
+<td>Leather Trade</td>
+</tr>
+<tr>
+<td>Ilyan the Scribe</td>
+<td>kscribe</td>
+<td>quest</td>
+<td>(-8, 8) town centre, north-west</td>
+<td>Census</td>
+</tr>
+<tr>
+<td>Captain Marek</td>
+<td>kcaptain</td>
+<td>quest</td>
+<td>(8, 8) town centre, north-east</td>
+<td>Wraith Patrol; Ashen Menace</td>
+</tr>
+<tr>
+<td>Opal the Jeweler</td>
+<td>kjeweler</td>
+<td>quest</td>
+<td>(-26, 12) town centre, north-west</td>
+<td>A Stone for the Queen</td>
+</tr>
+<tr>
+<td>Wilm the Tailor</td>
+<td>ktailor</td>
+<td>quest</td>
+<td>(26, 12) town centre, north-east</td>
+<td>Winter Coats</td>
+</tr>
+<tr>
+<td>Lyra the Bard</td>
+<td>kbard</td>
+<td>quest</td>
+<td>(-4, -18) town centre, south</td>
+<td>A Song for Aurelion</td>
+</tr>
+<tr>
+<td>Brother Aldous</td>
+<td>kpriest</td>
+<td>quest</td>
+<td>(4, -18) town centre, south</td>
+<td>Winged Terrors</td>
+</tr>
+</tbody>
+</table></div>
+<h2>3. All quests</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Quest</th>
+<th>Id</th>
+<th>Given by</th>
+<th>Min Lv</th>
+<th>Needs first</th>
+<th>Objectives</th>
+<th>Rewards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Welcome to Dawnrest</td>
+<td>q_intro</td>
+<td>elder</td>
+<td>0</td>
+<td>-</td>
+<td>Speak to Borin the Smith (1)</td>
+<td>25 XP, 5g, Minor Healing Potion x2</td>
+</tr>
+<tr>
+<td>Gloop Trouble</td>
+<td>q_gloop</td>
+<td>elder</td>
+<td>0</td>
+<td>q_intro</td>
+<td>Defeat Mossy Gloops (5)</td>
+<td>45 XP, 10g, Minor Healing Potion x2</td>
+</tr>
+<tr>
+<td>Herbs for Sylva</td>
+<td>q_herbs</td>
+<td>alchemist</td>
+<td>0</td>
+<td>q_intro</td>
+<td>Collect Redleaf (5); Collect Bluebell (3)</td>
+<td>40 XP, 8g, Minor Mana Potion x2</td>
+</tr>
+<tr>
+<td>First Brew</td>
+<td>q_brew</td>
+<td>alchemist</td>
+<td>0</td>
+<td>q_herbs</td>
+<td>Brew Minor Healing Potions (2)</td>
+<td>35 XP, 5g, Redleaf x3</td>
+</tr>
+<tr>
+<td>Metal for Borin</td>
+<td>q_forge</td>
+<td>smith</td>
+<td>1</td>
+<td>q_intro</td>
+<td>Collect Timber (4); Collect Iron Ore (3)</td>
+<td>50 XP, 10g, Tough Hide x2</td>
+</tr>
+<tr>
+<td>A Proper Blade</td>
+<td>q_sword</td>
+<td>smith</td>
+<td>3</td>
+<td>q_forge</td>
+<td>Forge an Iron Sword (1)</td>
+<td>70 XP, 20g, Ember Ring x1</td>
+</tr>
+<tr>
+<td>Awaken the Inheritance</td>
+<td>q_awaken</td>
+<td>elder</td>
+<td>3</td>
+<td>q_gloop</td>
+<td>Reach Level 3 (3); Choose your inheritance (1)</td>
+<td>90 XP, 0g, Wood Chest x1</td>
+</tr>
+<tr>
+<td>The Wolf Pack</td>
+<td>q_wolves</td>
+<td>elder</td>
+<td>3</td>
+<td>q_awaken</td>
+<td>Defeat Fangrunners (6)</td>
+<td>110 XP, 20g, Dark Iron Chest x1, Minor Healing Potion x3</td>
+</tr>
+<tr>
+<td>Across the Bridge</td>
+<td>q_patrol</td>
+<td>guard</td>
+<td>2</td>
+<td>q_intro</td>
+<td>Cross the river bridge (1)</td>
+<td>50 XP, 10g, Minor Mana Potion x2</td>
+</tr>
+<tr>
+<td>Venom in the Air</td>
+<td>q_spitters</td>
+<td>guard</td>
+<td>4</td>
+<td>q_patrol</td>
+<td>Defeat Venom Wisps (4)</td>
+<td>140 XP, 25g, Healing Potion x2</td>
+</tr>
+<tr>
+<td>Tavern Gossip</td>
+<td>q_lore</td>
+<td>innkeeper</td>
+<td>0</td>
+<td>-</td>
+<td>Speak to Elder Maren (1); Speak to Borin (1); Speak to Sylva (1)</td>
+<td>40 XP, 8g, Minor Healing Potion x2</td>
+</tr>
+<tr>
+<td>Hidden Caches</td>
+<td>q_chests</td>
+<td>innkeeper</td>
+<td>2</td>
+<td>q_lore</td>
+<td>Open chests (3)</td>
+<td>70 XP, 15g, Lucky Charm x1</td>
+</tr>
+<tr>
+<td>Stone Guardians</td>
+<td>q_golems</td>
+<td>elder</td>
+<td>6</td>
+<td>q_wolves</td>
+<td>Defeat Stone Golems (2); Carry Iron Ore (3)</td>
+<td>220 XP, 40g, Iron Armor x1, Bronze Chest x1</td>
+</tr>
+<tr>
+<td>Trial of Ascension <strong>(promotion)</strong></td>
+<td>q_ascension</td>
+<td>elder</td>
+<td>10</td>
+<td>q_golems</td>
+<td>Reach Level 10 (10); Defeat the Ancient Warden (1)</td>
+<td>500 XP, 100g, Kingdom Token x1, Silver Chest x1</td>
+</tr>
+<tr>
+<td>A Friendly Face</td>
+<td>h_hello</td>
+<td>HIDDEN (discovered by doing)</td>
+<td>0</td>
+<td>-</td>
+<td>Use an emote near another player (1)</td>
+<td>40 XP, 10g, Lucky Charm x1</td>
+</tr>
+<tr>
+<td>The Forager</td>
+<td>h_forager</td>
+<td>HIDDEN (discovered by doing)</td>
+<td>0</td>
+<td>-</td>
+<td>Harvest herbs (15)</td>
+<td>80 XP, 15g, Dark Iron Chest x1</td>
+</tr>
+<tr>
+<td>Echoes in the Ruins</td>
+<td>h_ruins</td>
+<td>HIDDEN (discovered by doing)</td>
+<td>0</td>
+<td>-</td>
+<td>Find the ancient ruins (1)</td>
+<td>60 XP, 10g, Wood Chest x1</td>
+</tr>
+<tr>
+<td>Welcome to Aurelion</td>
+<td>k_welcome</td>
+<td>kguide</td>
+<td>10</td>
+<td>-</td>
+<td>Speak to Hale the Armorer (1); Speak to Orla the Brewer (1)</td>
+<td>300 XP, 80g, Bronze Chest x1</td>
+</tr>
+<tr>
+<td>Armor for the Guard</td>
+<td>k_armor</td>
+<td>ksmith</td>
+<td>10</td>
+<td>-</td>
+<td>Forge Iron Armor (1)</td>
+<td>250 XP, 60g, Bronze Chest x1</td>
+</tr>
+<tr>
+<td>Brewer's Order</td>
+<td>k_potions</td>
+<td>kalch</td>
+<td>10</td>
+<td>-</td>
+<td>Brew Healing Potions (3)</td>
+<td>220 XP, 50g, Healing Potion x2</td>
+</tr>
+<tr>
+<td>Hearty Stew</td>
+<td>k_cook</td>
+<td>kcook</td>
+<td>10</td>
+<td>-</td>
+<td>Bring Greenmoss (6); Bring Redleaf (4)</td>
+<td>200 XP, 40g, Healing Potion x3</td>
+</tr>
+<tr>
+<td>River Lore</td>
+<td>k_fisher</td>
+<td>kfisher</td>
+<td>10</td>
+<td>-</td>
+<td>Reach the river (1)</td>
+<td>150 XP, 30g, Bronze Chest x1</td>
+</tr>
+<tr>
+<td>The Herb Harvest</td>
+<td>k_farmer</td>
+<td>kfarmer</td>
+<td>10</td>
+<td>-</td>
+<td>Harvest herbs (10)</td>
+<td>220 XP, 40g, Healing Potion x2</td>
+</tr>
+<tr>
+<td>Beast Season</td>
+<td>k_hunter</td>
+<td>khunter</td>
+<td>10</td>
+<td>-</td>
+<td>Defeat Fangrunners (8)</td>
+<td>260 XP, 50g, Tough Hide x4</td>
+</tr>
+<tr>
+<td>Drake Hunt</td>
+<td>k_drake</td>
+<td>khunter</td>
+<td>14</td>
+<td>k_hunter</td>
+<td>Defeat Ember Drakelings (2)</td>
+<td>700 XP, 150g, Gold Chest x1</td>
+</tr>
+<tr>
+<td>Ore for the Crown</td>
+<td>k_miner</td>
+<td>kminer</td>
+<td>10</td>
+<td>-</td>
+<td>Bring Iron Ore (10)</td>
+<td>240 XP, 60g, Bronze Chest x1</td>
+</tr>
+<tr>
+<td>Census</td>
+<td>k_scribe</td>
+<td>kscribe</td>
+<td>10</td>
+<td>-</td>
+<td>Meet Mabel (1); Meet Pike (1); Meet Dorn (1); Meet Lyra (1)</td>
+<td>180 XP, 30g, Lucky Charm x1</td>
+</tr>
+<tr>
+<td>Leather Trade</td>
+<td>k_merchant</td>
+<td>kmerchant</td>
+<td>10</td>
+<td>-</td>
+<td>Bring Tough Hide (6)</td>
+<td>150 XP, 120g, -</td>
+</tr>
+<tr>
+<td>Wraith Patrol</td>
+<td>k_captain</td>
+<td>kcaptain</td>
+<td>10</td>
+<td>-</td>
+<td>Defeat Grave Wraiths (6)</td>
+<td>400 XP, 80g, Silver Chest x1</td>
+</tr>
+<tr>
+<td>Ashen Menace</td>
+<td>k_brutes</td>
+<td>kcaptain</td>
+<td>12</td>
+<td>k_captain</td>
+<td>Defeat Ashen Brutes (4)</td>
+<td>520 XP, 100g, Silver Chest x1, Knight Plate x1</td>
+</tr>
+<tr>
+<td>A Stone for the Queen</td>
+<td>k_jeweler</td>
+<td>kjeweler</td>
+<td>10</td>
+<td>-</td>
+<td>Bring Crystal Shards (3)</td>
+<td>300 XP, 90g, Sun Crest x1</td>
+</tr>
+<tr>
+<td>Winter Coats</td>
+<td>k_tailor</td>
+<td>ktailor</td>
+<td>10</td>
+<td>-</td>
+<td>Bring Tough Hide (5); Bring Sharp Bone (4)</td>
+<td>180 XP, 40g, Traveller's Robe x1, Lucky Charm x1</td>
+</tr>
+<tr>
+<td>A Song for Aurelion</td>
+<td>k_bard</td>
+<td>kbard</td>
+<td>10</td>
+<td>-</td>
+<td>Use an emote near another player (1)</td>
+<td>120 XP, 20g, Dark Iron Chest x1</td>
+</tr>
+<tr>
+<td>Winged Terrors</td>
+<td>k_priest</td>
+<td>kpriest</td>
+<td>12</td>
+<td>-</td>
+<td>Defeat Gale Harpies (4)</td>
+<td>450 XP, 90g, Greater Healing Potion x2</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hidden quests have no giver: they are discovered by doing the thing (emote near another player, harvest many herbs, visit the ruins...). The player sees a toast when one is found.</p>
+<h2>4. Milestone / first-time rewards</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Milestone</th>
+<th>Id</th>
+<th>Condition</th>
+<th>Chest</th>
+<th>Gold</th>
+<th>World-first bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Blood</td>
+<td>first_kill</td>
+<td>kills &gt;= 1</td>
+<td>Wood</td>
+<td>10</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Monster Hunter</td>
+<td>kills_100</td>
+<td>kills &gt;= 100</td>
+<td>Bronze</td>
+<td>150</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Apprentice Crafter</td>
+<td>first_craft</td>
+<td>crafted &gt;= 1</td>
+<td>Wood</td>
+<td>10</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Herbalist</td>
+<td>herbalist</td>
+<td>herbs &gt;= 20</td>
+<td>Dark Iron</td>
+<td>40</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Treasure Seeker</td>
+<td>chests_10</td>
+<td>chests &gt;= 10</td>
+<td>Bronze</td>
+<td>100</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Rising Adventurer</td>
+<td>lv5</td>
+<td>level &gt;= 5</td>
+<td>Dark Iron</td>
+<td>100</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Breakthrough</td>
+<td>lv10</td>
+<td>level &gt;= 10</td>
+<td>Silver</td>
+<td>300</td>
+<td>yes (+2 chest grades for the first player in the world)</td>
+</tr>
+<tr>
+<td>Ascended</td>
+<td>promoted</td>
+<td>promoted &gt;= 1</td>
+<td>Gold</td>
+<td>500</td>
+<td>yes (+2 chest grades for the first player in the world)</td>
+</tr>
+<tr>
+<td>Citizen of Aurelion</td>
+<td>kingdom</td>
+<td>kingdom &gt;= 1</td>
+<td>Silver</td>
+<td>400</td>
+<td>yes (+2 chest grades for the first player in the world)</td>
+</tr>
+<tr>
+<td>Veteran</td>
+<td>lv20</td>
+<td>level &gt;= 20</td>
+<td>Diamond</td>
+<td>600</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Champion</td>
+<td>lv30</td>
+<td>level &gt;= 30</td>
+<td>Emerald</td>
+<td>900</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Hero</td>
+<td>lv40</td>
+<td>level &gt;= 40</td>
+<td>Sapphire</td>
+<td>1200</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Legend</td>
+<td>lv50</td>
+<td>level &gt;= 50</td>
+<td>Ruby</td>
+<td>1800</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Mythic</td>
+<td>lv70</td>
+<td>level &gt;= 70</td>
+<td>Mythril</td>
+<td>3000</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Soulbound Legend</td>
+<td>lv100</td>
+<td>level &gt;= 100</td>
+<td>Celestial</td>
+<td>8000</td>
+<td>yes (+2 chest grades for the first player in the world)</td>
+</tr>
+</tbody>
+</table></div>
+<h2>5. Monsters and bosses</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Monster</th>
+<th>Lv</th>
+<th>HP</th>
+<th>Damage</th>
+<th>Speed</th>
+<th>Weak to</th>
+<th>Resists</th>
+<th>Ability notes</th>
+<th>XP</th>
+<th>Gold</th>
+<th>Drops (chance when it drops)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mossy Gloop</td>
+<td>1</td>
+<td>40</td>
+<td>5</td>
+<td>2.6</td>
+<td>Fire</td>
+<td>Water</td>
+<td>Hops and bounces into its target. Slow, harmless alone but they come in groups. Weak to Fire.</td>
+<td>8</td>
+<td>1-3</td>
+<td>Redleaf 45% (x1-2), Greenmoss 20% (x1-1), Timber 15% (x1-1)</td>
+</tr>
+<tr>
+<td>Fangrunner</td>
+<td>3</td>
+<td>90</td>
+<td>10</td>
+<td>5.5</td>
+<td>Thunder</td>
+<td>Air</td>
+<td>Fast pack hunter that circles and bites. Dodge when it lunges. Weak to Thunder.</td>
+<td>18</td>
+<td>2-6</td>
+<td>Tough Hide 55% (x1-2), Sharp Bone 30% (x1-2), Redleaf 12% (x1-1)</td>
+</tr>
+<tr>
+<td>Venom Wisp</td>
+<td>4</td>
+<td>70</td>
+<td>12</td>
+<td>3.0</td>
+<td>Earth</td>
+<td>Nature</td>
+<td>Floats out of melee range and spits venom bolts from afar. Close in quickly. Weak to Earth.</td>
+<td>22</td>
+<td>3-8</td>
+<td>Bluebell 45% (x1-2), Crystal Shard 15% (x1-1)</td>
+</tr>
+<tr>
+<td>Stone Golem</td>
+<td>6</td>
+<td>260</td>
+<td>22</td>
+<td>2.4</td>
+<td>Water</td>
+<td>Earth</td>
+<td>Slow and heavy. Slams with huge arms; very high health. Weak to Water, shrugs off Earth.</td>
+<td>55</td>
+<td>6-14</td>
+<td>Iron Ore 65% (x1-3), Stone Heart 15% (x1-1)</td>
+</tr>
+<tr>
+<td>Grave Wraith</td>
+<td>10</td>
+<td>220</td>
+<td>28</td>
+<td>4.5</td>
+<td>Light</td>
+<td>Void</td>
+<td>Fast ghost that drifts through the dark and slashes. Weak to Light, immune-like to Void.</td>
+<td>90</td>
+<td>10-22</td>
+<td>Wraith Essence 45% (x1-2), Spirit Dust 12% (x1-1)</td>
+</tr>
+<tr>
+<td>Ashen Brute</td>
+<td>12</td>
+<td>600</td>
+<td>45</td>
+<td>3.2</td>
+<td>Ice</td>
+<td>Fire</td>
+<td>Ashen ogre with crushing blows and heavy armour. Weak to Ice, resists Fire.</td>
+<td>140</td>
+<td>14-30</td>
+<td>Tough Hide 70% (x2-4), Iron Ore 50% (x2-4), Stone Heart 20% (x1-1)</td>
+</tr>
+<tr>
+<td>Gale Harpy</td>
+<td>14</td>
+<td>420</td>
+<td>38</td>
+<td>5.0</td>
+<td>Earth</td>
+<td>Air</td>
+<td>Dives and rakes from the air; hard to hit while flying. Weak to Earth, resists Air.</td>
+<td>170</td>
+<td>16-34</td>
+<td>Sharp Bone 60% (x1-3), Spirit Dust 15% (x1-1)</td>
+</tr>
+<tr>
+<td>Ember Drakeling</td>
+<td>18</td>
+<td>900</td>
+<td>60</td>
+<td>4.5</td>
+<td>Water</td>
+<td>Fire</td>
+<td>Young dragon with claws and a breath-like rush. Weak to Water, resists Fire.</td>
+<td>300</td>
+<td>30-70</td>
+<td>Ember Core 35% (x1-1), Crystal Shard 30% (x1-2), Tough Hide 50% (x2-4)</td>
+</tr>
+<tr>
+<td>Ancient Warden <strong>BOSS</strong></td>
+<td>10</td>
+<td>2400</td>
+<td>55</td>
+<td>3.0</td>
+<td>Thunder</td>
+<td>Earth</td>
+<td>BOSS. Heavy melee combos plus a ground slam every few seconds (watch the red circle). Enrages below 40% health. Weak to Thunder.</td>
+<td>600</td>
+<td>100-160</td>
+<td>Kingdom Token 100% (x1-1), Silver Chest 100% (x1-1), Stone Heart 80% (x1-2)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Drops: a monster only drops loot some of the time (see section 6); each entry is then rolled separately. Higher-level monsters drop more often and better.</p>
+<h3>Where each monster lives</h3>
+<p><strong>Dawnrest Village</strong>
+- Mossy Gloop: 10 per instance, e.g. inner fields, south-west
+- Fangrunner: 6 per instance, e.g. inner fields, north-east
+- Venom Wisp: 4 per instance, e.g. outskirts, east
+- Stone Golem: 2 per instance, e.g. outskirts, north, across the river
+- Ancient Warden: 1 per instance, e.g. Trial Grounds ruins at (-62, -48), outskirts, south-west</p>
+<p><strong>Aurelion Kingdom</strong>
+- Fangrunner: 8 per instance, e.g. far borderlands, south-east
+- Stone Golem: 6 per instance, e.g. outskirts, south
+- Grave Wraith: 8 per instance, e.g. outskirts, north
+- Ashen Brute: 6 per instance, e.g. inner fields, north
+- Gale Harpy: 6 per instance, e.g. far borderlands, south-east
+- Ember Drakeling: 3 per instance, e.g. outskirts, east
+- Venom Wisp: 4 per instance, e.g. outskirts, east</p>
+<p><strong>Area bosses:</strong> Dawnrest Village - Ancient Warden (promotion boss, respawns after 4 minutes). Aurelion Kingdom - Ember Drakelings (elite) roam the far borderlands; a full kingdom boss is reserved for a later version.</p>
+<h2>6. Loot: how drops work</h2>
+<p>Chance that ANY loot drops when a monster dies (simulated 4000 kills each):
+- Mossy Gloop (Lv1): 42%
+- Fangrunner (Lv3): 43%
+- Venom Wisp (Lv4): 34%
+- Stone Golem (Lv6): 50%
+- Grave Wraith (Lv10): 38%
+- Ashen Brute (Lv12): 60%
+- Gale Harpy (Lv14): 43%
+- Ember Drakeling (Lv18): 54%
+- Ancient Warden (Lv10): 100%</p>
+<h2>7. Chests</h2>
+<p>Chest grades from lowest to highest: Wood &gt; Dark Iron &gt; Bronze &gt; Silver &gt; Gold &gt; Diamond &gt; Emerald &gt; Sapphire &gt; Ruby &gt; Mythril &gt; Celestial. A chest is locked if the player is too low level (level + 6 must be at least grade x 4). Opened chests refill after 6 minutes in that instance.</p>
+<h3>Chest contents by grade (simulated 3000 openings each)</h3>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Grade</th>
+<th>Average gold</th>
+<th>Items per chest</th>
+<th>Items that can appear (% of chests)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wood</td>
+<td>4</td>
+<td>0.9</td>
+<td>Timber 19%, Minor Mana Potion 18%, Minor Healing Potion 18%, Redleaf 17%, Bluebell 17%</td>
+</tr>
+<tr>
+<td>Dark Iron</td>
+<td>20</td>
+<td>1.0</td>
+<td>Sharp Bone 17%, Iron Ore 16%, Minor Healing Potion 15%, Tough Hide 15%, Greenmoss 15%, Minor Mana Potion 15%</td>
+</tr>
+<tr>
+<td>Bronze</td>
+<td>36</td>
+<td>1.0</td>
+<td>Iron Ore 15%, Healing Potion 15%, Lucky Charm 14%, Tough Hide 14%, Timber 14%, Crystal Shard 14%, Mana Potion 14%</td>
+</tr>
+<tr>
+<td>Silver</td>
+<td>55</td>
+<td>1.9</td>
+<td>Iron Sword 24%, Iron Armor 23%, Crystal Shard 23%, Frost Pendant 22%, Mana Potion 22%, Ember Ring 21%, Healing Potion 21%, Iron Spear 21%</td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>74</td>
+<td>2.0</td>
+<td>Greater Healing Potion 24%, Iron Armor 24%, Soul Elixir 24%, Arcane Staff 24%, Longbow 23%, Sun Crest 23%, Spirit Dust 23%, Steel Sword 22%</td>
+</tr>
+<tr>
+<td>Diamond</td>
+<td>93</td>
+<td>2.1</td>
+<td>Sun Crest 26%, Crystal Blade 25%, Ember Core 25%, Spirit Dust 25%, Greater Healing Potion 24%, Moonlit Spear 24%, Soul Elixir 23%, Knight Plate 22%</td>
+</tr>
+<tr>
+<td>Emerald</td>
+<td>114</td>
+<td>3.1</td>
+<td>Ember Core 38%, Spirit Dust 38%, Knight Plate 38%, Greater Healing Potion 38%, Crystal Blade 37%, Moonlit Spear 37%, Sun Crest 37%</td>
+</tr>
+<tr>
+<td>Sapphire</td>
+<td>133</td>
+<td>3.2</td>
+<td>Spirit Dust 46%, Sun Crest 44%, Knight Plate 44%, Ember Core 43%, Soul Elixir 42%, Moonlit Spear 42%</td>
+</tr>
+<tr>
+<td>Ruby</td>
+<td>153</td>
+<td>3.2</td>
+<td>Mythril Mail 51%, Sun Crest 51%, Moonlit Spear 51%, Ember Core 50%, Soul Elixir 49%</td>
+</tr>
+<tr>
+<td>Mythril</td>
+<td>170</td>
+<td>4.2</td>
+<td>Soul Elixir 60%, Sun Crest 59%, Crystal Blade 59%, Ember Core 58%, Mythril Mail 57%</td>
+</tr>
+<tr>
+<td>Celestial</td>
+<td>190</td>
+<td>4.2</td>
+<td>Soul Elixir 60%, Ember Core 60%, Sun Crest 59%, Spirit Dust 59%, Mythril Mail 58%</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Chest locations - Dawnrest Village (16 chests)</h3>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Grade</th>
+<th>Position</th>
+<th>Area</th>
+<th>Min level to open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Wood</td>
+<td>(-36, -24)</td>
+<td>inner fields, south-west</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Wood</td>
+<td>(25, -20)</td>
+<td>inner fields, south-east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Wood</td>
+<td>(25, -34)</td>
+<td>inner fields, south-east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wood</td>
+<td>(19, -33)</td>
+<td>inner fields, south-east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wood</td>
+<td>(17, 25)</td>
+<td>inner fields, north-east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Wood</td>
+<td>(42, 8)</td>
+<td>inner fields, east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Dark Iron</td>
+<td>(-34, 9)</td>
+<td>inner fields, west</td>
+<td>0</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Dark Iron</td>
+<td>(47, 8)</td>
+<td>inner fields, east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Dark Iron</td>
+<td>(-26, -25)</td>
+<td>inner fields, south-west</td>
+<td>0</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Dark Iron</td>
+<td>(17, -22)</td>
+<td>inner fields, south-east</td>
+<td>0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Bronze</td>
+<td>(20, 39)</td>
+<td>inner fields, north-east</td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Bronze</td>
+<td>(-11, -31)</td>
+<td>inner fields, south</td>
+<td>2</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Bronze</td>
+<td>(4, -62)</td>
+<td>outskirts, south</td>
+<td>2</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Silver</td>
+<td>(-63, 13)</td>
+<td>outskirts, west</td>
+<td>6</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Silver</td>
+<td>(-25, 54)</td>
+<td>inner fields, north-west</td>
+<td>6</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Gold</td>
+<td>(-54, -39)</td>
+<td>outskirts, south-west</td>
+<td>10</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Chest locations - Aurelion Kingdom (26 chests)</h3>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Grade</th>
+<th>Position</th>
+<th>Area</th>
+<th>Min level to open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>Bronze</td>
+<td>(-12, -82)</td>
+<td>outskirts, south</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Bronze</td>
+<td>(68, 0)</td>
+<td>outskirts, east</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bronze</td>
+<td>(36, -69)</td>
+<td>outskirts, south-east</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Bronze</td>
+<td>(-36, -43)</td>
+<td>inner fields, south-west</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Bronze</td>
+<td>(-41, 21)</td>
+<td>inner fields, north-west</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bronze</td>
+<td>(48, 40)</td>
+<td>outskirts, north-east</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Silver</td>
+<td>(6, 51)</td>
+<td>inner fields, north</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Silver</td>
+<td>(-55, 26)</td>
+<td>outskirts, north-west</td>
+<td>6</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Silver</td>
+<td>(-25, 44)</td>
+<td>inner fields, north-west</td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Silver</td>
+<td>(33, 61)</td>
+<td>outskirts, north-east</td>
+<td>6</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Silver</td>
+<td>(8, 83)</td>
+<td>outskirts, north</td>
+<td>6</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Silver</td>
+<td>(-10, -51)</td>
+<td>inner fields, south</td>
+<td>6</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Silver</td>
+<td>(16, -70)</td>
+<td>outskirts, south</td>
+<td>6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Gold</td>
+<td>(-85, -26)</td>
+<td>outskirts, west</td>
+<td>10</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Gold</td>
+<td>(79, -35)</td>
+<td>outskirts, south-east</td>
+<td>10</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Gold</td>
+<td>(42, 79)</td>
+<td>outskirts, north-east</td>
+<td>10</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Gold</td>
+<td>(-56, 38)</td>
+<td>outskirts, north-west</td>
+<td>10</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Gold</td>
+<td>(33, -59)</td>
+<td>outskirts, south-east</td>
+<td>10</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Diamond</td>
+<td>(42, -64)</td>
+<td>outskirts, south-east</td>
+<td>14</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Diamond</td>
+<td>(63, 1)</td>
+<td>outskirts, east</td>
+<td>14</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Diamond</td>
+<td>(69, -65)</td>
+<td>far borderlands, south-east</td>
+<td>14</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Emerald</td>
+<td>(-86, 42)</td>
+<td>far borderlands, north-west</td>
+<td>18</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Emerald</td>
+<td>(-81, -25)</td>
+<td>outskirts, west</td>
+<td>18</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Sapphire</td>
+<td>(29, 104)</td>
+<td>far borderlands, north, across the river</td>
+<td>22</td>
+</tr>
+<tr>
+<td>24</td>
+<td>Ruby</td>
+<td>(80, 69)</td>
+<td>far borderlands, north-east</td>
+<td>26</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Mythril</td>
+<td>(-16, 84)</td>
+<td>outskirts, north</td>
+<td>30</td>
+</tr>
+</tbody>
+</table></div>
+<h2>8. Gathering nodes (herbs, ore, crystal, wood)</h2>
+<h3>Dawnrest Village</h3>
+<ul>
+<li>Herb nodes: 28 (19 within 48 m of the plaza; found between 20 m and 78 m). Yields red/blue/green herbs (potions). Respawn 45-75 s.</li>
+<li>Tree nodes: 26 (6 within 48 m of the plaza; found between 31 m and 89 m). Yields wood. Respawn 45-75 s.</li>
+<li>Ore nodes: 14 (0 within 48 m of the plaza; found between 55 m and 94 m). Yields iron ore (12% crystal shard). Respawn 45-75 s.</li>
+<li>Crystal nodes: 7 (0 within 48 m of the plaza; found between 71 m and 94 m). Yields crystal shards. Respawn 45-75 s.</li>
+</ul>
+<h3>Aurelion Kingdom</h3>
+<ul>
+<li>Herb nodes: 30 (25 within 48 m of the plaza; found between 14 m and 73 m). Yields red/blue/green herbs (potions). Respawn 45-75 s.</li>
+<li>Tree nodes: 20 (4 within 48 m of the plaza; found between 31 m and 88 m). Yields wood. Respawn 45-75 s.</li>
+<li>Ore nodes: 22 (0 within 48 m of the plaza; found between 58 m and 97 m). Yields iron ore (12% crystal shard). Respawn 45-75 s.</li>
+<li>Crystal nodes: 14 (0 within 48 m of the plaza; found between 72 m and 98 m). Yields crystal shards. Respawn 45-75 s.</li>
+</ul>
+<h2>9. Equipment and where to get it</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Type</th>
+<th>Rarity</th>
+<th>Req Lv</th>
+<th>Stats</th>
+<th>Where to get it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Training Sword</td>
+<td>Weapon (Sword)</td>
+<td>Common</td>
+<td>0</td>
+<td>STR 2</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Iron Sword</td>
+<td>Weapon (Sword)</td>
+<td>Uncommon</td>
+<td>3</td>
+<td>STR 6</td>
+<td>Craft at smith (3 Iron Ore + 2 Timber, 10g); Chest: Silver</td>
+</tr>
+<tr>
+<td>Steel Sword</td>
+<td>Weapon (Sword)</td>
+<td>Rare</td>
+<td>8</td>
+<td>STR 11  TOU 1</td>
+<td>Craft at smith (5 Iron Ore + 2 Tough Hide + 2 Sharp Bone, 80g); Chest: Gold</td>
+</tr>
+<tr>
+<td>Crystal Blade</td>
+<td>Weapon (Sword)</td>
+<td>Epic</td>
+<td>12</td>
+<td>STR 15  MAG 6</td>
+<td>Craft at smith (3 Crystal Shard + 4 Iron Ore, 200g); Chest: Diamond; Chest: Emerald; Chest: Mythril</td>
+</tr>
+<tr>
+<td>Iron Greatsword</td>
+<td>Weapon (Greatsword)</td>
+<td>Uncommon</td>
+<td>6</td>
+<td>STR 12</td>
+<td>Craft at smith (8 Iron Ore + 3 Timber, 40g)</td>
+</tr>
+<tr>
+<td>Oak Staff</td>
+<td>Weapon (Staff)</td>
+<td>Common</td>
+<td>0</td>
+<td>MAG 5</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Arcane Staff</td>
+<td>Weapon (Staff)</td>
+<td>Rare</td>
+<td>8</td>
+<td>STR 2  MAG 12</td>
+<td>Craft at smith (4 Timber + 3 Crystal Shard, 80g); Chest: Gold</td>
+</tr>
+<tr>
+<td>Hunter Bow</td>
+<td>Weapon (Bow)</td>
+<td>Common</td>
+<td>0</td>
+<td>STR 4</td>
+<td>Craft at smith (4 Timber + 2 Tough Hide)</td>
+</tr>
+<tr>
+<td>Longbow</td>
+<td>Weapon (Bow)</td>
+<td>Rare</td>
+<td>6</td>
+<td>STR 9</td>
+<td>Chest: Gold</td>
+</tr>
+<tr>
+<td>Iron Spear</td>
+<td>Weapon (Spear)</td>
+<td>Uncommon</td>
+<td>3</td>
+<td>STR 7</td>
+<td>Craft at smith (3 Iron Ore + 3 Timber, 10g); Chest: Silver</td>
+</tr>
+<tr>
+<td>Moonlit Spear</td>
+<td>Weapon (Spear)</td>
+<td>Epic</td>
+<td>10</td>
+<td>STR 13  MAG 3</td>
+<td>Chest: Diamond; Chest: Emerald; Chest: Sapphire; Chest: Ruby</td>
+</tr>
+<tr>
+<td>Traveller's Robe</td>
+<td>Armor</td>
+<td>Common</td>
+<td>0</td>
+<td>TOU 2  MAG 2</td>
+<td>Quest reward: Winter Coats</td>
+</tr>
+<tr>
+<td>Leather Armor</td>
+<td>Armor</td>
+<td>Uncommon</td>
+<td>0</td>
+<td>TOU 5  HP 20</td>
+<td>Craft at smith (4 Tough Hide + 2 Timber)</td>
+</tr>
+<tr>
+<td>Iron Armor</td>
+<td>Armor</td>
+<td>Rare</td>
+<td>5</td>
+<td>TOU 9  HP 50</td>
+<td>Craft at smith (6 Iron Ore + 4 Tough Hide, 30g); Quest reward: Stone Guardians; Chest: Silver; Chest: Gold</td>
+</tr>
+<tr>
+<td>Knight Plate</td>
+<td>Armor</td>
+<td>Epic</td>
+<td>12</td>
+<td>TOU 15  HP 110</td>
+<td>Craft at smith (10 Iron Ore + 6 Tough Hide + 2 Stone Heart, 250g); Quest reward: Ashen Menace; Chest: Diamond; Chest: Emerald; Chest: Sapphire</td>
+</tr>
+<tr>
+<td>Mythril Mail</td>
+<td>Armor</td>
+<td>Legendary</td>
+<td>20</td>
+<td>TOU 22  HP 200  MAG 4</td>
+<td>Chest: Ruby; Chest: Mythril; Chest: Celestial</td>
+</tr>
+<tr>
+<td>Lucky Charm</td>
+<td>Accessory</td>
+<td>Uncommon</td>
+<td>0</td>
+<td>MAG 2  BEA 3</td>
+<td>Quest reward: Hidden Caches; Quest reward: A Friendly Face; Quest reward: Census; Quest reward: Winter Coats; Chest: Bronze</td>
+</tr>
+<tr>
+<td>Ember Ring</td>
+<td>Accessory</td>
+<td>Rare</td>
+<td>5</td>
+<td>STR 4</td>
+<td>Quest reward: A Proper Blade; Chest: Silver</td>
+</tr>
+<tr>
+<td>Frost Pendant</td>
+<td>Accessory</td>
+<td>Rare</td>
+<td>5</td>
+<td>TOU 4</td>
+<td>Chest: Silver</td>
+</tr>
+<tr>
+<td>Sun Crest</td>
+<td>Accessory</td>
+<td>Epic</td>
+<td>12</td>
+<td>STR 6  TOU 5  MAG 6  BEA 2</td>
+<td>Quest reward: A Stone for the Queen; Chest: Gold; Chest: Diamond; Chest: Emerald; Chest: Sapphire; Chest: Ruby; Chest: Mythril; Chest: Celestial</td>
+</tr>
+</tbody>
+</table></div>
+<h2>10. Rare and crafting materials</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Material</th>
+<th>Rarity</th>
+<th>Where to get it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Timber</td>
+<td>Common</td>
+<td>Drop: Mossy Gloop 15%; Chest: Wood; Chest: Bronze; Gather: trees</td>
+</tr>
+<tr>
+<td>Iron Ore</td>
+<td>Common</td>
+<td>Drop: Stone Golem 65%; Drop: Ashen Brute 50%; Chest: Dark Iron; Chest: Bronze; Gather: ore nodes</td>
+</tr>
+<tr>
+<td>Crystal Shard</td>
+<td>Rare</td>
+<td>Drop: Venom Wisp 15%; Drop: Ember Drakeling 30%; Chest: Bronze; Chest: Silver; Gather: crystal nodes / ore nodes (12%)</td>
+</tr>
+<tr>
+<td>Redleaf</td>
+<td>Common</td>
+<td>Drop: Mossy Gloop 45%; Drop: Fangrunner 12%; Quest reward: First Brew; Chest: Wood; Gather: herb nodes</td>
+</tr>
+<tr>
+<td>Bluebell</td>
+<td>Common</td>
+<td>Drop: Venom Wisp 45%; Chest: Wood; Gather: herb nodes</td>
+</tr>
+<tr>
+<td>Greenmoss</td>
+<td>Common</td>
+<td>Drop: Mossy Gloop 20%; Chest: Dark Iron; Gather: herb nodes</td>
+</tr>
+<tr>
+<td>Tough Hide</td>
+<td>Common</td>
+<td>Drop: Fangrunner 55%; Drop: Ashen Brute 70%; Drop: Ember Drakeling 50%; Quest reward: Metal for Borin; Quest reward: Beast Season; Chest: Dark Iron; Chest: Bronze</td>
+</tr>
+<tr>
+<td>Sharp Bone</td>
+<td>Common</td>
+<td>Drop: Fangrunner 30%; Drop: Gale Harpy 60%; Chest: Dark Iron</td>
+</tr>
+<tr>
+<td>Stone Heart</td>
+<td>Rare</td>
+<td>Drop: Stone Golem 15%; Drop: Ashen Brute 20%; Drop: Ancient Warden 80%</td>
+</tr>
+<tr>
+<td>Wraith Essence</td>
+<td>Rare</td>
+<td>Drop: Grave Wraith 45%</td>
+</tr>
+<tr>
+<td>Spirit Dust</td>
+<td>Epic</td>
+<td>Drop: Grave Wraith 12%; Drop: Gale Harpy 15%; Chest: Gold; Chest: Diamond; Chest: Emerald; Chest: Sapphire; Chest: Celestial</td>
+</tr>
+<tr>
+<td>Ember Core</td>
+<td>Epic</td>
+<td>Drop: Ember Drakeling 35%; Chest: Diamond; Chest: Emerald; Chest: Sapphire; Chest: Ruby; Chest: Mythril; Chest: Celestial</td>
+</tr>
+<tr>
+<td>Kingdom Token</td>
+<td>Epic</td>
+<td>Drop: Ancient Warden 100%; Quest reward: Trial of Ascension</td>
+</tr>
+</tbody>
+</table></div>
+<h2>11. Consumables</h2>
+<ul>
+<li>Minor Healing Potion: Restores 60 HP.  Source: Craft at alchemist (2 Redleaf); Quest reward: Welcome to Dawnrest; Quest reward: Gloop Trouble; Quest reward: The Wolf Pack; Quest reward: Tavern Gossip; Chest: Wood; Chest: Dark Iron</li>
+<li>Healing Potion: Restores 150 HP.  Source: Craft at alchemist (3 Redleaf + 1 Greenmoss, 5g); Quest reward: Venom in the Air; Quest reward: Brewer's Order; Quest reward: Hearty Stew; Quest reward: The Herb Harvest; Chest: Bronze; Chest: Silver</li>
+<li>Greater Healing Potion: Restores 400 HP.  Source: Craft at alchemist (5 Redleaf + 2 Greenmoss + 1 Spirit Dust, 60g); Quest reward: Winged Terrors; Chest: Gold; Chest: Diamond; Chest: Emerald</li>
+<li>Minor Mana Potion: Restores 40 mana.  Source: Craft at alchemist (2 Bluebell); Quest reward: Herbs for Sylva; Quest reward: Across the Bridge; Chest: Wood; Chest: Dark Iron</li>
+<li>Mana Potion: Restores 100 mana.  Source: Craft at alchemist (3 Bluebell + 1 Greenmoss, 5g); Chest: Bronze; Chest: Silver</li>
+<li>Soul Elixir: Restores 300 HP and 150 mana.  Source: Craft at alchemist (4 Redleaf + 4 Bluebell + 1 Crystal Shard, 40g); Chest: Gold; Chest: Diamond; Chest: Sapphire; Chest: Ruby; Chest: Mythril; Chest: Celestial</li>
+<li>Level-Up Pill: Raises your level by 1. Works from Level 1 to 10 only.  Source: -</li>
+</ul>
+<h2>12. Skills</h2>
+<div class="wrap"><table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Element</th>
+<th>Type</th>
+<th>Unlock Lv</th>
+<th>Mana</th>
+<th>Cooldown</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Power Strike</td>
+<td>none</td>
+<td>Melee</td>
+<td>1</td>
+<td>8</td>
+<td>4s</td>
+<td>A heavy strike in front of you.</td>
+</tr>
+<tr>
+<td>Whirlwind</td>
+<td>none</td>
+<td>Nova</td>
+<td>2</td>
+<td>14</td>
+<td>7s</td>
+<td>Spin and hit everything around you.</td>
+</tr>
+<tr>
+<td>Guardian Stance</td>
+<td>none</td>
+<td>Shield</td>
+<td>3</td>
+<td>12</td>
+<td>14s</td>
+<td>Absorb damage for a few seconds.</td>
+</tr>
+<tr>
+<td>Leap Slam</td>
+<td>none</td>
+<td>Dash</td>
+<td>4</td>
+<td>18</td>
+<td>9s</td>
+<td>Leap forward and slam the ground. (leaves a crater)</td>
+</tr>
+<tr>
+<td>Second Wind</td>
+<td>none</td>
+<td>Heal</td>
+<td>5</td>
+<td>20</td>
+<td>18s</td>
+<td>Restore 30% HP to you and nearby allies.</td>
+</tr>
+<tr>
+<td>Focus Burst</td>
+<td>none</td>
+<td>Projectile</td>
+<td>6</td>
+<td>16</td>
+<td>6s</td>
+<td>A burst of focused energy.</td>
+</tr>
+<tr>
+<td>Tidal Lance</td>
+<td>Water</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Water energy.</td>
+</tr>
+<tr>
+<td>Wave Crash</td>
+<td>Water</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Water around the target area.</td>
+</tr>
+<tr>
+<td>Riptide Step</td>
+<td>Water</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Water.</td>
+</tr>
+<tr>
+<td>Mending Spring</td>
+<td>Water</td>
+<td>Heal</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Water.</td>
+</tr>
+<tr>
+<td>Fire Bolt</td>
+<td>Fire</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Fire energy.</td>
+</tr>
+<tr>
+<td>Inferno Burst</td>
+<td>Fire</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Fire around the target area. (leaves a crater)</td>
+</tr>
+<tr>
+<td>Blaze Rush</td>
+<td>Fire</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Fire.</td>
+</tr>
+<tr>
+<td>Phoenix Ward</td>
+<td>Fire</td>
+<td>Heal</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Fire.</td>
+</tr>
+<tr>
+<td>Stone Shard</td>
+<td>Earth</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Earth energy.</td>
+</tr>
+<tr>
+<td>Quake</td>
+<td>Earth</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Earth around the target area. (leaves a crater)</td>
+</tr>
+<tr>
+<td>Boulder Charge</td>
+<td>Earth</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Earth.</td>
+</tr>
+<tr>
+<td>Earthen Hide</td>
+<td>Earth</td>
+<td>Shield</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Earth.</td>
+</tr>
+<tr>
+<td>Void Bolt</td>
+<td>Void</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Void energy.</td>
+</tr>
+<tr>
+<td>Singularity</td>
+<td>Void</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Void around the target area.</td>
+</tr>
+<tr>
+<td>Rift Step</td>
+<td>Void</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Void.</td>
+</tr>
+<tr>
+<td>Dark Barrier</td>
+<td>Void</td>
+<td>Shield</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Void.</td>
+</tr>
+<tr>
+<td>Thunder Spear</td>
+<td>Thunder</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Thunder energy.</td>
+</tr>
+<tr>
+<td>Storm Nova</td>
+<td>Thunder</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Thunder around the target area. (leaves a crater)</td>
+</tr>
+<tr>
+<td>Lightning Dash</td>
+<td>Thunder</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Thunder.</td>
+</tr>
+<tr>
+<td>Static Shield</td>
+<td>Thunder</td>
+<td>Shield</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Thunder.</td>
+</tr>
+<tr>
+<td>Thorn Shot</td>
+<td>Nature</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Nature energy.</td>
+</tr>
+<tr>
+<td>Bloom Burst</td>
+<td>Nature</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Nature around the target area.</td>
+</tr>
+<tr>
+<td>Vine Leap</td>
+<td>Nature</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Nature.</td>
+</tr>
+<tr>
+<td>Verdant Heal</td>
+<td>Nature</td>
+<td>Heal</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Nature.</td>
+</tr>
+<tr>
+<td>Light Ray</td>
+<td>Light</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Light energy.</td>
+</tr>
+<tr>
+<td>Radiant Nova</td>
+<td>Light</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Light around the target area.</td>
+</tr>
+<tr>
+<td>Dawn Step</td>
+<td>Light</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Light.</td>
+</tr>
+<tr>
+<td>Holy Mend</td>
+<td>Light</td>
+<td>Heal</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Light.</td>
+</tr>
+<tr>
+<td>Gale Cutter</td>
+<td>Air</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Air energy.</td>
+</tr>
+<tr>
+<td>Cyclone</td>
+<td>Air</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Air around the target area.</td>
+</tr>
+<tr>
+<td>Wind Rush</td>
+<td>Air</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Air.</td>
+</tr>
+<tr>
+<td>Zephyr Guard</td>
+<td>Air</td>
+<td>Shield</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Air.</td>
+</tr>
+<tr>
+<td>Ice Shard</td>
+<td>Ice</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Ice energy.</td>
+</tr>
+<tr>
+<td>Frost Nova</td>
+<td>Ice</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Ice around the target area.</td>
+</tr>
+<tr>
+<td>Glacier Slide</td>
+<td>Ice</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Ice.</td>
+</tr>
+<tr>
+<td>Frozen Armor</td>
+<td>Ice</td>
+<td>Shield</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Ice.</td>
+</tr>
+<tr>
+<td>Prism Bolt</td>
+<td>Omnigod</td>
+<td>Projectile</td>
+<td>3</td>
+<td>12</td>
+<td>3s</td>
+<td>A bolt of Omnigod energy.</td>
+</tr>
+<tr>
+<td>Harmony Nova</td>
+<td>Omnigod</td>
+<td>Nova</td>
+<td>5</td>
+<td>24</td>
+<td>9s</td>
+<td>A burst of Omnigod around the target area.</td>
+</tr>
+<tr>
+<td>Astral Step</td>
+<td>Omnigod</td>
+<td>Dash</td>
+<td>7</td>
+<td>18</td>
+<td>8s</td>
+<td>Dash forward in a flash of Omnigod.</td>
+</tr>
+<tr>
+<td>Divine Grace</td>
+<td>Omnigod</td>
+<td>Heal</td>
+<td>9</td>
+<td>28</td>
+<td>16s</td>
+<td>Protect yourself and allies with Omnigod.</td>
+</tr>
+</tbody>
+</table></div>
+<h2>13. Element weaknesses</h2>
+<p>A skill of an element a monster is weak to deals x1.4 damage; a resisted element deals x0.7; Omnigod skills deal x1.15 to everything. Basic weapon attacks are neutral.</p></body></html>
