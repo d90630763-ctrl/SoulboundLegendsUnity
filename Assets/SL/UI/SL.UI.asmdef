@@ -1,0 +1,14 @@
+{
+  "name": "SL.UI",
+  "rootNamespace": "",
+  "references": ["SL.Core","SL.World","SL.Actors","SL.Gameplay","SL.Net","Unity.Netcode.Runtime","Unity.Collections","UnityEngine.UI"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
