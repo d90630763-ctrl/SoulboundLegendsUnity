@@ -1,0 +1,9 @@
+<linker>
+  <assembly fullname="SL.Core" preserve="all"/>
+  <assembly fullname="SL.World" preserve="all"/>
+  <assembly fullname="SL.Actors" preserve="all"/>
+  <assembly fullname="SL.Gameplay" preserve="all"/>
+  <assembly fullname="SL.Net" preserve="all"/>
+  <assembly fullname="SL.UI" preserve="all"/>
+  <assembly fullname="SL.Game" preserve="all"/>
+</linker>
