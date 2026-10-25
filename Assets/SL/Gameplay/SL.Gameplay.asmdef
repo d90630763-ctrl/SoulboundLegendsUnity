@@ -1,0 +1,14 @@
+{
+  "name": "SL.Gameplay",
+  "rootNamespace": "",
+  "references": ["SL.Core","SL.World","SL.Actors"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
