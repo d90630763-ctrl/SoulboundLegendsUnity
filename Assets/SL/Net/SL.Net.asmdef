@@ -1,0 +1,14 @@
+{
+  "name": "SL.Net",
+  "rootNamespace": "",
+  "references": ["SL.Core","SL.World","SL.Actors","SL.Gameplay","Unity.Netcode.Runtime","Unity.Collections"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
